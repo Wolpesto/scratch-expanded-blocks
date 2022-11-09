@@ -90,6 +90,7 @@
  Blockly.Msg.EVENT_BROADCASTANDWAIT = 'broadcast %1 and wait';
  Blockly.Msg.EVENT_WHENKEYPRESSED = 'when %1 key pressed';
  Blockly.Msg.EVENT_WHENKEYPRESSED_SPACE = 'space';
+ Blockly.Msg.EVENT_WHENKEYPRESSED_SHIFT = 'shift';
  Blockly.Msg.EVENT_WHENKEYPRESSED_LEFT = 'left arrow';
  Blockly.Msg.EVENT_WHENKEYPRESSED_RIGHT = 'right arrow';
  Blockly.Msg.EVENT_WHENKEYPRESSED_DOWN = 'down arrow';

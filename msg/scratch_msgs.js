@@ -5227,6 +5227,7 @@ Blockly.ScratchMsgs.locales["en"] =
     "EVENT_BROADCASTANDWAIT": "broadcast %1 and wait",
     "EVENT_WHENKEYPRESSED": "when %1 key pressed",
     "EVENT_WHENKEYPRESSED_SPACE": "space",
+    "EVENT_WHENKEYPRESSED_SHIFT": "shift",
     "EVENT_WHENKEYPRESSED_LEFT": "left arrow",
     "EVENT_WHENKEYPRESSED_RIGHT": "right arrow",
     "EVENT_WHENKEYPRESSED_DOWN": "down arrow",
