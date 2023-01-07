@@ -715,14 +715,25 @@ Blockly.Toolbox.Category.prototype.createDom = function() {
       {'class': 'scratchCategoryMenuItemLabel'},
       Blockly.utils.replaceMessageReferences(this.name_));
   if (this.iconURI_) {
-    this.bubble_ = goog.dom.createDom('div',
+    this.icon_ = goog.dom.createDom('div',
         {'class': 'scratchCategoryItemIcon'});
-    this.bubble_.style.backgroundImage = 'url(' + this.iconURI_ + ')';
-  } else {
+    this.icon_.style.backgroundImage = 'url(' + this.iconURI_ + ')';
     this.bubble_ = goog.dom.createDom('div',
         {'class': 'scratchCategoryItemBubble'});
     this.bubble_.style.backgroundColor = this.colour_;
     this.bubble_.style.borderColor = this.secondaryColour_;
+    this.bubble_.style.width = '1.5rem';
+    this.bubble_.style.height = '1.5rem';
+    this.bubble_.style.backgroundImage = Blockly.mainWorkspace.options.pathToMedia;
+    this.bubble_.appendChild(this.icon_);
+  } else {
+    this.bubble_ = goog.dom.createDom('div',
+        {'class': 'scratchCategoryItemBubble'});
+    this.bubble_.style.width = '1.25rem';
+    this.bubble_.style.height = '1.25rem';
+    this.bubble_.style.backgroundColor = this.colour_;
+    this.bubble_.style.borderColor = this.secondaryColour_;
+    this.bubble_.style.backgroundImage = Blockly.mainWorkspace.options.pathToMedia;
   }
   this.item_.appendChild(this.bubble_);
   this.item_.appendChild(this.label_);
